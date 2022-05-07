@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/dataInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="4"
+        android:text="2020-09-23"/>
+    <ImageView
+        android:id="@+id/skyIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_heavy_snow"/>
+    <TextView
+        android:id="@+id/skyInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="多云"
+        android:layout_weight="3"/>
+    <TextView
+        android:id="@+id/tempratureInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="12 - 13 度"
+        android:gravity="end"
+        android:layout_weight="3"/>
+</LinearLayout>

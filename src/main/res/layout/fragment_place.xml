@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:windowBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/bgImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+
+        android:src="@drawable/bg_place" />
+
+    <FrameLayout
+        android:id="@+id/actionBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/searchPlaceEdit"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10px"
+            android:layout_marginEnd="10px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:paddingStart="10px"
+            android:paddingEnd="10px"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:inputType="textShortMessage"
+            android:hint="输入地址"
+
+            android:background="@drawable/search_bg"/>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/actionBarLayout"/>
+</RelativeLayout>
